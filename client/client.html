@@ -1,0 +1,26 @@
+<head>
+    <title>Chat app</title>
+</head>
+
+<body>
+    <header>
+        {{loginButtons}}
+        <h1>Chat application</h1>
+    </header>
+    {{> messages }}
+    {{> input}}
+</body>
+
+<template name="messages">
+    <div id="messages-container">
+        {{#each messages}}
+            <div style="color: {{color}}"><strong>{{name}}:</strong> {{message}}</div>
+        {{/each}}
+    </div>
+</template>
+
+<template name="input">
+    <div class="message-input-container">
+        <input type="text" id="message">
+    </div>
+</template>

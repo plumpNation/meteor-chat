@@ -1,0 +1,50 @@
+html {
+    font-family: courier;
+    color: yellow;
+    background: black;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: black;
+}
+
+#login-buttons,
+h1 {
+    margin: 5px;
+}
+
+#login-buttons {
+    float: right;
+}
+
+#messages-container {
+    margin: 50px 0;
+}
+
+.message-input-container {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: black;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.message-input-container,
+#message {
+    box-sizing: border-box;
+    width: 100%;
+    border: 0;
+    height: 30px;
+}
