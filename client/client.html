@@ -1,11 +1,18 @@
 <head>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="cleartype" content="on">
+    <link rel="stylesheet" href="normalize.css">
+
     <title>Chat app</title>
 </head>
 
 <body>
     <header>
         {{loginButtons}}
-        <h1>Chat application</h1>
+        <h1 id="page-header">Chat application</h1>
     </header>
     {{> messages }}
     {{> input}}

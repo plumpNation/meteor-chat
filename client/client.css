@@ -1,13 +1,10 @@
-html {
-    font-family: courier;
-    color: yellow;
-    background: black;
-}
-
 html,
 body {
     padding: 0;
     margin: 0;
+    font-family: courier;
+    color: yellow;
+    background: black;
 }
 
 header {
@@ -19,7 +16,7 @@ header {
 }
 
 #login-buttons,
-h1 {
+#page-header {
     margin: 5px;
 }
 

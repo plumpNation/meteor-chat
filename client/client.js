@@ -1,8 +1,17 @@
 // Template.<templateName>.<templateVariable>
 Template.messages.messages = function () {
     // find( query, options );
-    return Messages.find({}, { 'sort': { 'time': +1 } });
+    return Messages.find({}, { 'sort': { 'time': +1 } });;
 };
+
+Template.messages.rendered = function () {
+    // No matter how many messages, stay at the bottom to see the input
+    if (document.body.scrollHeight > window.innerHeight) {
+        window.scrollTo(0, document.body.offsetHeight);
+    }
+};
+
+Meteor.subscribe("messages");
 
 var ENTER_KEY = 13,
 
@@ -41,11 +50,6 @@ Template.input.events = {
             }
 
             message.value = '';
-
-            // No matter how many messages, stay at the bottom to see the input
-            if (document.body.scrollHeight > window.innerHeight) {
-                window.scrollTo(0, document.body.offsetHeight);
-            }
         }
     }
 };
